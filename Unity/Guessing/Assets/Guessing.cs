@@ -84,8 +84,13 @@ public class Guessing : MonoBehaviour {
 				print ("Is the number higher or lower than " + guess);
 			}
 		else if (Input.GetKeyDown (KeyCode.Return)) {
+			
 			textBox.text = "Your number is " + guess +
-			"\n\nI Win";			
+			"\n\nI Win" +
+			"\n\nPress Return to play again" +
+			"\nPress Escape to close the game";
+				
+			counter = -2;
 
 				print ("Your number is " + guess);
 				print ("I win");
