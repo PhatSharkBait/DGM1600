@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4b7a28919386a44e29a092db8c3ba41a
+timeCreated: 1506615902
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Square Raising
+  fontNames:
+  - Square Raising
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

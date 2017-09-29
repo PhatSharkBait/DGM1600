@@ -1,0 +1,14 @@
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\obj\Debug\Assembly-CSharp.dll
+C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Guessing\obj\Debug\Assembly-CSharp.pdb

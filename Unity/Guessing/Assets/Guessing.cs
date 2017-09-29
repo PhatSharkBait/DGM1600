@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Guessing : MonoBehaviour {
 
-	public Text textBox;
+	public TextMesh textBox;
+	//public Text textBox;
 
 
 	private int max = 100;
@@ -66,7 +67,7 @@ public class Guessing : MonoBehaviour {
 				guess = (max + min) / 2;
 				counter--;
 
-				textBox.text = "I have " + counter + " guesses left" +
+				textBox.text = "Guesses left: " + counter +
 				"\n\nIs the number higher or lower than " + guess;
 
 				print (counter + " Guesses Left");
@@ -77,7 +78,7 @@ public class Guessing : MonoBehaviour {
 				guess = (max + min) / 2;
 				counter--;
 
-				textBox.text = "I have " + counter + " guesses left" +
+				textBox.text = "Guesses left: " + counter +
 				"\n\nIs the number higher or lower than " + guess;
 
 				print (counter + " Guesses Left");
