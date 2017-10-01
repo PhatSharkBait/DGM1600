@@ -8,7 +8,7 @@ public class SomeNiceName : MonoBehaviour {
 	public Text textObject;
 
 	public enum States {
-	start, tree, punchDeath, getWood, crab, raft, axe, fire
+	start, tree, punchDeath, getWood, crab, raft, axe, fire, brokenRaft, fixedRaft, repair
 	};
 	public States myState;
 
@@ -41,11 +41,18 @@ public class SomeNiceName : MonoBehaviour {
 			State_raft ();
 		} else if (myState == States.fire) {
 			State_fire ();
+		} else if (myState == States.fixedRaft) {
+			State_fixedRaft ();
+		} else if (myState == States.fire) {
+			State_fire ();
+		} else if (myState == States.repair) {
+			State_repair ();
 		}
+
 	}
 
 	void State_start(){
-		if (axe == false && wood == false && crab == false && brokeRaft == false && fixRaft == false) {
+		if (axe == false && wood == false && crab == false && brokeRaft == false) {
 			textObject.text = "You are on a small desert island " +
 			"\n There is a tall Tree." +
 			"\n There is a Crab walking along the shore" +
@@ -57,7 +64,7 @@ public class SomeNiceName : MonoBehaviour {
 			"\n Press C to approach the Crab" +
 			"\n Press R to approach the Raft" +
 			"\n Press F to approach the Firepit";
-		} else if (axe == true && wood == false && crab == false && brokeRaft == false && fixRaft == false) {
+		} else if (axe == true && wood == false && crab == false && brokeRaft == false) {
 			textObject.text =
 			"There is a tall Tree." +
 			"\n There is a Crab walking along the shore" +
@@ -67,7 +74,7 @@ public class SomeNiceName : MonoBehaviour {
 			"\n Press C to approach the Crab" +
 			"\n Press R to approach the Raft" +
 			"\n Press F to approach the Firepit";
-		} else if (axe == true && wood == true && crab == false && brokeRaft == false && fixRaft == false) {
+		} else if (axe == true && wood == true && crab == false && brokeRaft == false) {
 			textObject.text =
 			"\n There is a Crab walking along the shore" +
 			"\n There is a small, broken Raft" +
@@ -75,24 +82,24 @@ public class SomeNiceName : MonoBehaviour {
 			"\n Press C to approach the Crab" +
 			"\n Press R to approach the Raft" +
 			"\n Press F to approach the Firepit";
-		} else if (axe == true && wood == true && crab == true && brokeRaft == false && fixRaft == false) {
+		} else if (axe == true && wood == true && crab == true && brokeRaft == false) {
 			textObject.text = 
 			"\n There is a small, broken Raft" +
 			"\n There is a rusty Axe" +
 			"\n There is a Firepit" +
 			"\n\n Press R to approach the Raft" +
 			"\n Press F to approach the Firepit";
-		} else if (axe == true && wood == true && crab == true && brokeRaft == true && fixRaft == false) {
+		} else if (axe == true && wood == true && crab == true && brokeRaft == true) {
 			textObject.text =
 				"\n There is a Firepit" +
 				"\n\n Press F to approach the Firepit";
-		} else if (axe == true && wood == true && crab == false && brokeRaft == true && fixRaft == false) {
+		} else if (axe == true && wood == true && crab == false && brokeRaft == true) {
 			textObject.text =
 				"\n There is a Crab walking along the shore" +
 				"\n There is a Firepit" +
 				"\n\n Press C to approach the Crab" +
 				"\n Press F to approach the Firepit";
-		} else if (axe == true && wood == false && crab == true && brokeRaft == false && fixRaft == false) {
+		} else if (axe == true && wood == false && crab == true && brokeRaft == false) {
 			textObject.text =
 				"\n There is a tall Tree." +
 				"\n There is a small, broken Raft" +
@@ -100,13 +107,13 @@ public class SomeNiceName : MonoBehaviour {
 				"\n\n Press T to approach the Tree" +
 				"\n Press R to approach the Raft" +
 				"\n Press F to approach the Firepit";
-		} else if (axe == true && wood == false && crab == true && brokeRaft == true && fixRaft == false) {
+		} else if (axe == true && wood == false && crab == true && brokeRaft == true) {
 			textObject.text =
 				"\n There is a tall Tree." +
 				"\n There is a Firepit" +
 				"\n\n Press T to approach the Tree" +
 				"\n Press F to approach the Firepit";
-		} else if (axe == true && wood == false && crab == false && brokeRaft == true && fixRaft == false) {
+		} else if (axe == true && wood == false && crab == false && brokeRaft == true) {
 			textObject.text =
 				"\n There is a tall Tree." +
 				"\n There is a Crab walking along the shore" +
@@ -190,13 +197,13 @@ public class SomeNiceName : MonoBehaviour {
 		}
 	}
 	void State_raft(){
-		if (wood == false && axe == false) {
+		if (fixRaft == false && wood == false && axe == false) {
 			textObject.text = "You approach a wooden raft." +
 			"\nThere are various holes in the raft" +
 			"\nThe sail seems unharmed" +
 			"\n\nPress R to ride the Raft" +
 			"\nPress S to return to Start";
-		} else if (wood == true) {
+		} else if (fixRaft == false && wood == true) {
 			textObject.text = "You approach a wooden raft." +
 			"\nThere are various holes in the raft" +
 			"\nThe sail seems unharmed" +
@@ -204,13 +211,27 @@ public class SomeNiceName : MonoBehaviour {
 			"\nPress S to return to Start" +
 			"\nPress A to break down the raft with the Axe" +
 			"\nPress W to repair the Raft with Wood";
-		} else if (wood == false && axe == true) {
+		} else if (fixRaft == false && wood == false && axe == true) {
 			textObject.text = "You approach a wooden raft." +
 			"\nThere are various holes in the raft" +
 			"\nThe sail seems unharmed" +
 			"\n\nPress R to ride the Raft" +
 			"\nPress S to return to Start" +
 			"\nPress A to break down the raft with the Axe";
+		} else if (fixRaft == true && wood == true && axe == true) {
+			textObject.text = "You have repaired the Raft" +
+				"\n\nPress R to ride the Raft" +
+				"\nPress S to return to Start" +
+				"\nPress A to break down the raft with the Axe";
+		}
+		if (Input.GetKeyDown (KeyCode.R) && fixRaft == false) {
+			myState = States.brokenRaft;
+		} else if (Input.GetKeyDown (KeyCode.R) && fixRaft == true) {
+			myState = States.fixedRaft;
+		} else if (Input.GetKeyDown (KeyCode.S)) {
+			myState = States.start;
+		} else if (Input.GetKeyDown (KeyCode.W)){
+			myState = States.repair;
 		}
 	}
 	void State_crab(){
@@ -218,5 +239,31 @@ public class SomeNiceName : MonoBehaviour {
 	}
 	void State_fire(){
 	
+	}
+	void State_brokenRaft(){
+		textObject.text = "You Push the raft into the water and step on board." +
+			"\nit feels very unstable under your feet" +
+			"\nYou make it off shore and travel 30 yards" +
+			"\nYou look down as the water reaches your knees, the Raft was sinking" +
+			"\nYou wish you took swimming lessons as a child" +
+			"\n\nYOU HAVE DIED";
+	}
+	void State_fixedRaft(){
+		textObject.text = "You Push the raft into the water and step on board." +
+			"\nThe raft feels stable" +
+			"\nYou travel for an hour and decide to get some rest" +
+			"\nYou drift to sleep" +
+			"\nYou wake to the sound of thunder accompanied by a bright flash" +
+			"\nYou look up at your sail and see another flash" +
+			"\n\nYOU HAVE DIED";
+	}
+	void State_repair(){
+		fixRaft = true;
+		textObject.text = "You have repaired the raft" +
+		"\n\nPress Enter to continue.";
+
+		if (Input.GetKeyDown (KeyCode.Return)) {
+			myState = States.raft;
+		}
 	}
 }

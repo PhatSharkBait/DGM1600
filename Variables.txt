@@ -1,0 +1,7 @@
+Well the Link in Canvas is broken.
+
+This is what I know about variables
+1. They can be changed during a program in a domain that it is defined in.
+2. They can be declared publicly or privately
+3. You cannot have 2 definitions for 1 variable.
+4. You can use the same variable twice with different definitions as long as they are declared privately in separate domains.
