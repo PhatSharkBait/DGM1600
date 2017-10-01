@@ -1,0 +1,49 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8541
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Mostly Cameron\Documents\DGM1600\DGM1600\Unity\Adventure\TextAdventure_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.198 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.986829 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.024844 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 276.
+Total: 0.257510 ms (FindLiveObjects: 0.026808 ms CreateObjectMapping: 0.018123 ms MarkObjects: 0.206914 ms  DeleteObjects: 0.005286 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.307350 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 276.
+Total: 0.168778 ms (FindLiveObjects: 0.017746 ms CreateObjectMapping: 0.014348 ms MarkObjects: 0.132908 ms  DeleteObjects: 0.003398 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.294135 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 276.
+Total: 0.198229 ms (FindLiveObjects: 0.026430 ms CreateObjectMapping: 0.016613 ms MarkObjects: 0.151032 ms  DeleteObjects: 0.003775 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 4274 -> priority: 1 
+  Thread -> id: 1894 -> priority: 1 
