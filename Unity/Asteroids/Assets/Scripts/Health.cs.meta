@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7b38bdef5fc8c49709fa00e5beb6b78e
+timeCreated: 1512666386
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - explosionEffect: {fileID: 1856294420395758, guid: 4b868e0adbf884441aae0c9db0e8df80,
+      type: 2}
+  - scoreboard: {fileID: 1335743090624090, guid: 3ef6c33dea8e7426db105b8a9e3ca366,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
