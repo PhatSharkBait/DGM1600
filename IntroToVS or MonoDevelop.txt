@@ -1,0 +1,5 @@
+I feel I have demonstrated my ability to make changes to code and submit code to GitHub. But here's an example.
+
+	If (Assignment = incomplete){
+		passClass = False;
+	}
