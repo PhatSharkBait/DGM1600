@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 50959135890600322}
   - component: {fileID: 60528675024660940}
   - component: {fileID: 114324000839792054}
-  - component: {fileID: 114010256101623864}
+  - component: {fileID: 66555497953672090}
+  - component: {fileID: 114461932095122540}
   m_Layer: 10
   m_Name: Meteor 1
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374505211759606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.14, y: 2.02, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,7 +58,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -101,19 +102,67 @@ PolygonCollider2D:
       - {x: 0.10917783, y: -0.29088914}
       - {x: 0.3381548, y: -0.32342255}
       - {x: 0.34260035, y: -0.3096223}
---- !u!114 &114010256101623864
-MonoBehaviour:
+--- !u!66 &66555497953672090
+CompositeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374505211759606}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 486daf9ce4d07487dbce3e1214f1aef4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingSpin: 1.2
-  speed: 0.05
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 60528675024660940}
+    m_ColliderPaths:
+    - - X: 4020888
+        Y: -1859561
+      - X: 4788000
+        Y: -225334
+      - X: 4933555
+        Y: 296225
+      - X: 2491777
+        Y: 4083557
+      - X: -3388686
+        Y: 4118247
+      - X: -3527372
+        Y: 3875184
+      - X: -4988687
+        Y: -767155
+      - X: -4997921
+        Y: -979204
+      - X: -2304445
+        Y: -4025334
+      - X: -1853777
+        Y: -4025334
+      - X: 1091778
+        Y: -2908891
+      - X: 3381548
+        Y: -3234225
+      - X: 3426003
+        Y: -3096223
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 0.1091778, y: -0.2908891}
+      - {x: 0.3381548, y: -0.3234225}
+      - {x: 0.34260032, y: -0.30962232}
+      - {x: 0.4020888, y: -0.1859561}
+      - {x: 0.4788, y: -0.0225334}
+      - {x: 0.4933555, y: 0.0296225}
+      - {x: 0.24917771, y: 0.4083557}
+      - {x: -0.33886862, y: 0.4118247}
+      - {x: -0.35273722, y: 0.3875184}
+      - {x: -0.4988687, y: -0.0767155}
+      - {x: -0.4997921, y: -0.0979204}
+      - {x: -0.2304445, y: -0.4025334}
+      - {x: -0.1853777, y: -0.4025334}
+  m_VertexDistance: 0.0005
 --- !u!114 &114324000839792054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,8 +177,28 @@ MonoBehaviour:
   health: 1
   explosionEffect: {fileID: 1856294420395758, guid: 4b868e0adbf884441aae0c9db0e8df80,
     type: 2}
-  hearts: []
+  hearts:
+  - {fileID: 1717522645207946, guid: ee8ee3450087f4027bac7c32c297dbfe, type: 2}
   scoreboard: {fileID: 1335743090624090, guid: 3ef6c33dea8e7426db105b8a9e3ca366, type: 2}
+  scoreScript: {fileID: 0}
+  LevelManager: {fileID: 0}
+  gameController: {fileID: 0}
+  scoreValue: 10
+--- !u!114 &114461932095122540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374505211759606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c9649bb6240ca49b796fd5820dfade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingSpin: 4.58
+  speed: -5
+  health: 1
+  scoreValue: 10
 --- !u!212 &212415737247477796
 SpriteRenderer:
   m_ObjectHideFlags: 1

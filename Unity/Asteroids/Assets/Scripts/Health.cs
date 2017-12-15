@@ -5,32 +5,47 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour {
 
-	public int health;
-	public GameObject explosionEffect;
-	public GameObject[] hearts;
+    public int health;
+    public GameObject explosionEffect;
 	public GameObject scoreboard;
 	public GameObject scoreScript;
+    public GameObject LevelManager;
+    public GameController gameController;
+    public int scoreValue;
+    public GameObject[] hearts;
 
-	private void Start (){
-		ShowHearts();
+    private void Start() {
 
-		if (MePlayer ()) {
+        if (MePlayer ()) {
 			ShowHearts ();
-			scoreScript = FindObjectOfType<ScoreBoard> ().gameObject;
 		}
-	}
-	private void ShowHearts(){
-		//turn hearts off
-		for (int i = 0; i < hearts.Length; i++) {
-			hearts [i].SetActive (false);
-		}
-		//turn hearts on by health
-		for (int i = 0; i < health; i++) {
-			hearts [i].SetActive (true);
-		}
-	}
 
-	private bool MePlayer(){
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+        if (gameController == null)
+        {
+            Debug.Log("Cannot find 'GameController' script");
+        }
+
+    }
+    public void ShowHearts()
+    {
+        //Turn off all hearts
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            hearts[i].SetActive(false);
+        }
+
+        //Turn hearts according to health
+        for (int i = 0; i < health; i++)
+        {
+            hearts[i].SetActive(true);
+        }
+    }
+    private bool MePlayer(){
 		if (GetComponent<PlayerController> ()) {
 			return true;
 		} else {
@@ -40,20 +55,21 @@ public class Health : MonoBehaviour {
 
 	public void IncrementHealth(int damage){
 		health += damage;
-		ShowHearts();
-		if (health <= 0) {
+        print(health);
+        ShowHearts();
+        if (health <= 0) {
 			Destroy (gameObject);
 			Instantiate (explosionEffect, transform.position, Quaternion.identity);
-			if (!MePlayer) {
-				IncrementScore ();
+			if (!MePlayer()) {
+				gameController.addScore (scoreValue);
+                Destroy(gameObject);
+
 			}
-			if (MePlayer) {
-				gameObject.GetComponent<PlayerController> ().LevelMangager.GetComponent<LevelManager> ().LoadNextLevel;
+			if (MePlayer()) {
+                LevelManager.GetComponent<LevelManager>().LoadNextLevel();
 			}
 		}
 	}
 
-	private void IncrementScore(){
-		scoreboard.GetComponent<ScoreBoard> ().IncrementScoreBoard (10);
-	}
+
 }
