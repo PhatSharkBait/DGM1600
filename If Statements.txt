@@ -1,0 +1,58 @@
+If Statements are pretty easy for me to understand now.
+
+What I don't understand is what I'm supposed to do for this assignment so i'm going to write what I know if statements can do with examples.
+
+1. If statements let you select specific conditions that lead to specific actions.
+
+	if (Dad = sleeping){
+		tiptoe = true;
+	}
+
+2. If statements also come equipped with else clauses that allow you to have multiple related conditions.
+
+	if (Dad = sleeping){
+		tiptoe = true;
+	}
+	else {
+		tiptoe = false;
+	}
+
+3. If statements can have multiple else clauses. The clauses between the if statement and the final else clause are labeled "else if"
+
+	if (Dad = sleeping){
+		tiptoe = true;
+	}
+	else if (Dad = atWork){
+		Scream = true;
+		tiptoe = false;
+	}
+	else {
+		tiptoe = false;
+		Scream = false;
+	}
+
+4. If statements can have multiple conditions in a single if statement.
+
+	if (Dad = sleeping && Mom = sleeping){
+		tiptoe = true;
+	}
+	else if (Dad = sleeping && Mom = awake){
+		Scream = false;
+		tiptoe = false;
+	}
+	else {
+		tiptoe = false;
+		Scream = true;
+	}
+
+5. If statements can be nested.
+
+	if (Dad = sleeping){
+		if(Daytime = true){
+			scream = true;
+		}
+		else{
+			scream = false;
+		}
+	}
+
