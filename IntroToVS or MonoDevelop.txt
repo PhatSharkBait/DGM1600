@@ -3,3 +3,9 @@ I feel I have demonstrated my ability to make changes to code and submit code to
 	If (Assignment = incomplete){
 		passClass = False;
 	}
+
+	#This is where I took a break before I finished the code
+	
+	else if (Assignment = complete){
+		passClass = True;
+	}
